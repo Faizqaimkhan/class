@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+<style>
+
+   .main{
+
+    height: 1000px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(red,blue);
+   
+   }
+
+   .head{
+
+        border: 2px solid whitesmoke;
+        background: white;
+        width: 300px;
+        height: 400px;
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+        border-radius: 50px 50px 50px 50px;
+
+   }
+
+   #user{
+    height: 30px;
+    border-radius: 100px;
+    width: auto;
+   }
+
+   #pass{
+    height: 30px;
+    border-radius: 100px;
+    width: auto;
+
+   }
+
+   #sub{
+
+    border-radius: 200px;
+    width: 200px;
+
+   }
+
+   h2{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+
+   }
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="head">
+    <form action="New.html" onsubmit="validate()">
+         
+        <h2>FORM</h2>
+        <input type="Username" placeholder="Type your username" id="user" ><br><br>
+        <input type="Password" placeholder="Type your Password" id="pass" ><br><br>
+        <a href="#">Forget password ?</a id="an"><br><br>
+        <img src="download__1_-removebg-preview.png" alt="Login"  onclick="validate()" id="sub"><br><br>
+    
+       
+    <script>
+
+        function validate() {
+            let user = document.getElementById("user")
+            let pass = document.getElementById("pass")
+           if (user.value.trim()=="" || pass.value.trim()=="") {
+            alert("form kon Fill kary ga MMAAAAAAA")
+            return true
+            } else {
+            window.location.href="New.html"
+            user.value=""
+            pass.value=""
+        }
+        
+    }
+
+    </script>
+
+    </form>
+</div>
+</div>
+</body>
+</html>
